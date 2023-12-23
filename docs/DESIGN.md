@@ -1,3 +1,6 @@
+# Design
+![alt text](https://github.com/harjas27/query-system/blob/main/docs/design.jpg?raw=true)
+
 # Components
 
 ## Tenant Service
@@ -54,10 +57,10 @@
 ### Executor
 * Get Applications involved, given the fields in the query
 * Get integrated applications from `Integration Service`
-* 
+
 * Convert the generic fields into app specific ones (use Model Store)
-* Add connector (enterprise app) details
-* Get the connector auth credentials from vault, get oauth token (pass user claims)
+* Fetch connector (enterprise app) details
+* Get the connector auth credentials from `Integration Service (vault)`, fetch oauth token from the application (pass user claims)
 
 * Perform Queries by calling the REST endpoints
 * Merge the results
