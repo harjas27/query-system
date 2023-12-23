@@ -1,7 +1,6 @@
 package connector;
 
 import auth.AuthInfo;
-import com.google.common.annotations.VisibleForTesting;
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;

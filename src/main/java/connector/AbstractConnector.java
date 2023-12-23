@@ -1,7 +1,6 @@
 package connector;
 
 import auth.AuthInfo;
-import ext.IntegrationServiceClient;
 import query.UniversalQuery;
 
 public abstract class AbstractConnector implements Connector {
