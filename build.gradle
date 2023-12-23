@@ -41,3 +41,10 @@ protobuf {
         artifact = 'com.google.protobuf:protoc:3.12.3'
     }
 }
+
+test {
+    testLogging {
+        outputs.upToDateWhen {false}
+        showStandardStreams = true
+    }
+}

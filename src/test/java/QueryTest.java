@@ -9,7 +9,10 @@ import org.junit.Test;
 import org.mockito.internal.util.reflection.BeanPropertySetter;
 import org.mockito.internal.util.reflection.FieldInitializer;
 import org.mockito.internal.util.reflection.InstanceField;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import query.UniversalQuery;
+import rest.QueryServiceController;
 import service.QueryServiceImpl;
 
 import java.io.IOException;
@@ -28,6 +31,8 @@ import static org.mockito.Mockito.when;
 import static org.mockito.internal.util.reflection.FieldInitializer.*;
 
 public class QueryTest {
+
+    private static final Logger LOGGER = LoggerFactory.getLogger(QueryTest.class.getName());
 
     @Test
     public void sampleQueryTest() throws IOException, URISyntaxException, NoSuchFieldException {
@@ -94,7 +99,8 @@ public class QueryTest {
 
         QueryServiceImpl queryService = new QueryServiceImpl(integrationServiceClient, modelStoreClient, connectorFactory);
         List<String> response = queryService.query(null, query);
-        System.out.println(response);
+        LOGGER.info("Request: {}", queryJson);
+        LOGGER.info("Response: {}", response);
     }
 
     private String readJson(String path) throws URISyntaxException, IOException {
