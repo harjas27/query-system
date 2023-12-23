@@ -1,0 +1,52 @@
+[
+    {
+      "sf_name": "Walmart Account 1",
+      "sf_owner": "John Doe",
+      "sf_description": "Salesforce Account for Walmart - Store Operations"
+    },
+    {
+      "sf_name": "Walmart Account 2",
+      "sf_owner": "Jane Smith",
+      "sf_description": "Salesforce Account for Walmart - Marketing Department"
+    },
+    {
+      "sf_name": "Walmart Account 3",
+      "sf_owner": "David Johnson",
+      "sf_description": "Salesforce Account for Walmart - Supply Chain Management"
+    },
+    {
+      "sf_name": "Walmart Account 4",
+      "sf_owner": "Emily Davis",
+      "sf_description": "Salesforce Account for Walmart - Finance Department"
+    },
+    {
+      "sf_name": "Walmart Account 5",
+      "sf_owner": "Michael Wilson",
+      "sf_description": "Salesforce Account for Walmart - Human Resources"
+    },
+    {
+      "sf_name": "Walmart Account 6",
+      "sf_owner": "Sophia Martinez",
+      "sf_description": "Salesforce Account for Walmart - Technology Division"
+    },
+    {
+      "sf_name": "Walmart Account 7",
+      "sf_owner": "William Anderson",
+      "sf_description": "Salesforce Account for Walmart - Sales Department"
+    },
+    {
+      "sf_name": "Walmart Account 8",
+      "sf_owner": "Olivia Garcia",
+      "sf_description": "Salesforce Account for Walmart - Customer Service"
+    },
+    {
+      "sf_name": "Walmart Account 9",
+      "sf_owner": "Noah Lopez",
+      "sf_description": "Salesforce Account for Walmart - Legal Affairs"
+    },
+    {
+      "sf_name": "Walmart Account 10",
+      "sf_owner": "Ava Lee",
+      "sf_description": "Salesforce Account for Walmart - Research and Development"
+    }
+]

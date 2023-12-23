@@ -1,0 +1,15 @@
+{
+  "object": "Account",
+  "fields": [
+    "owner",
+    "name",
+    "description"
+  ],
+  "filter": {
+    "filterExp": {
+      "field": "number_of_employees",
+      "operator": "GT",
+      "value": 1000
+    }
+  }
+}

@@ -1,0 +1,45 @@
+syntax = "proto3";
+package request;
+option java_package = "query";
+option java_multiple_files = true;
+
+message UniversalQuery {
+  string object = 1;
+  repeated string fields = 2;
+  string aggregation = 3;
+  FilterNode filter = 4;
+  int64 limit = 5;
+  enum MergeOption {
+    DEFAULT = 0; // no merging
+    REMOVE_DUPLICATES = 1;
+  }
+  MergeOption mergeOption = 10;
+}
+
+message FilterNode {
+  oneof filterOrTree {
+    FilterExp filterExp = 1;
+    FilterExpTree expTree = 2;
+  }
+  message FilterExp {
+    string field = 1;
+    string operator = 2;
+    string value = 3;
+  }
+}
+
+message FilterExpTree {
+  LogicalOperator operator = 1;
+  repeated FilterNode nodes = 2;
+}
+
+enum LogicalOperator {
+  AND = 0;
+  OR = 1;
+}
+
+message InternalQuery {
+  string id = 1;
+  UniversalQuery query = 2;
+  // connector enrichments
+}
